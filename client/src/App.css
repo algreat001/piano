@@ -1,0 +1,89 @@
+.App {
+    text-align: center;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow: hidden;
+}
+
+.piano {
+    user-select: none;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.piano__clear {
+    width: 50px;
+    height: 300px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 10px;
+    vertical-align: bottom;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end
+}
+
+.piano__clear--press {
+    background-color: #61dafb;
+}
+
+.piano__clear--press-outside {
+    background-color: cornflowerblue;
+}
+
+.piano__diez {
+    position: relative;
+    width: 40px;
+    height: 200px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 0 0 10px 10px;
+    font-size: 10px;
+    vertical-align: bottom;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    left: -20px;
+    margin-right: -42px;
+}
+
+.piano__diez--press {
+    background-color: #282c34;
+}
+
+.piano__diez--press-outside {
+    background-color: cornflowerblue;
+}
+
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
